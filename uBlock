@@ -1,0 +1,39 @@
+#=====================================
+# Title: HideMyTel
+# Description: This rule prevents third parties from getting your phone number via ISP API.
+# Power By Sachiho
+# Home Page: https://github.com/notSachiho/HideMyTel
+# Last update: 2021-03-04
+#=====================================
+! China Mobile
+onekey1.cmpassport.com
+||www.cmpassport.com/unisdk$document
+||config.cmpassport.com/client/uniConfig$document
+||wap.cmpassport.com/openapi/wabGetuserInfo$document
+
+! China Unicom
+hmrz.wo.cn
+id.mail.wo.cn
+mdn.open.wo.cn
+auth.wosms.cn
+nishub1.10010.com
+123.125.99.8:9001
+enrichgw.10010.com
+nisportal.10010.com
+opencloud.wostore.cn
+
+! China Telecom
+id6.me
+||open.e.189.cn/auth/sdkcodeinfo.do$document
+||open.e.189.cn/api/logbox/oauth2/getPreMobileUrl.do$document
+||open.e.189.cn/openapi/asymauth/gbcs/getUserInfo.do$document
+||open.e.189.cn/openapi/networkauth/preGetMobile.do$document
+||open.e.189.cn/openapi/networkauth/spcallback/cm/callBackMobile.do$document
+
+! Others
+253.com
+zzx9.cn
+114dev.com
+10.99.255.231
+yuyan.popadshop.com
+onepass.geetest.com
